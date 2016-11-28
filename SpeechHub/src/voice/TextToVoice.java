@@ -1,3 +1,4 @@
+
 package voice;
 
 import java.io.BufferedInputStream;
@@ -27,7 +28,7 @@ public class TextToVoice {
     private void convertText(String text){}
 
     private InputStream stream (String text) throws Exception {
-        String accessToken = token.generateAccessToken();
+        String accessToken = token.AccessToken();
         String urlString = "https://speech.platform.bing.com/synthesize";
         URL url = new URL(urlString);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
