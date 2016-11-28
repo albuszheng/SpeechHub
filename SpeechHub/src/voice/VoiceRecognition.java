@@ -29,14 +29,6 @@ public class VoiceRecognition {
         StringBuilder result = new StringBuilder();
 
         con.setRequestMethod("POST");
-//        con.setRequestProperty("scenarios", "smd");
-//        con.setRequestProperty("appid", "D4D52672-91D7-4C74-8AD8-42B1D98141A5");
-//        con.setRequestProperty("format", "json");
-//        con.setRequestProperty("locale","en-US");
-//        con.setRequestProperty("version","3.0");
-//        con.setRequestProperty("device.os","Windows OS");
-//        con.setRequestProperty("instanceid",uuid);
-//        con.setRequestProperty("requestid",uuid);
         con.setRequestProperty("Authorization","Bearer "+ACCESS_TOKEN);
         con.setRequestProperty("Content-type","audio/wav; codec=\"audio/pcm\"; samplerate=16000");
 
