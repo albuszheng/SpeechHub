@@ -11,6 +11,15 @@ import javax.sound.sampled.*;
 public class AudioOutput {
     private final CyclicBarrier barrier = new CyclicBarrier(2);
 
+    public void output (String file) {
+        try {
+            play(new File(file));
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+
     public void play(File file) {
         try {
             final Clip clip = (Clip)AudioSystem.getLine(new Line.Info(Clip.class));
