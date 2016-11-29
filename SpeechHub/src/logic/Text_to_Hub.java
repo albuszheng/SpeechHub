@@ -156,6 +156,35 @@ public class Text_to_Hub {
 				break;
 			}
 
+            case "change the color to blue":
+                output.output(files.color_change_success);
+                output.output(files.color_blue);
+                break;
+            case "change the color to red":
+                output.output(files.color_change_success);
+                output.output(files.color_red);
+                break;
+            case "change the color to green":
+                output.output(files.color_change_success);
+                output.output(files.color_green);
+                break;
+            case "change the color to yellow":
+                output.output(files.color_change_success);
+                output.output(files.color_yellow);
+                break;
+            case "change the color to purple":
+                output.output(files.color_change_success);
+                output.output(files.color_purple);
+                break;
+            case "change the color to white":
+                output.output(files.color_change_success);
+//                output.output(files.color_change_success);
+                break;
+//            case "what color it is":
+//                output.output(files.help_main);
+//                break;
+
+
 
 		}
 
