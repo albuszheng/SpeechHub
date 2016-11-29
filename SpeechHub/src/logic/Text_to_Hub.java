@@ -28,6 +28,9 @@ public class Text_to_Hub {
 			case "help":
 				output.output(files.help_main);
 				break;
+            case "what can you do":
+				output.output(files.help_main);
+				break;
 
 			case "how do i change the brightness":
 				output.output(files.help_brightness);
@@ -96,6 +99,7 @@ public class Text_to_Hub {
 //				toReturn = "10% brigter"
 
 				output.output(files.brightness_brighter);
+                break;
 				// light is not on
 			case "Failure":
 //				toReturn = "Please turn on the light first";
@@ -113,6 +117,7 @@ public class Text_to_Hub {
 //				toReturn = "10% brigter"
 
 				output.output(files.brightness_bright);
+                break;
 				// light is not on
 			case "Failure":
 //				toReturn = "Please turn on the light first";
@@ -130,6 +135,7 @@ public class Text_to_Hub {
 //				toReturn = "10% brigter"
 
 				output.output(files.brightness_brightest);
+                break;
 				// light is not on
 			case "Failure":
 //				toReturn = "Please turn on the light first";
@@ -147,6 +153,7 @@ public class Text_to_Hub {
 //				toReturn = "10% dimmer";
 
 				output.output(files.brightness_dimmer);
+                break;
 				// light is not on
 			case "Failure":
 //				toReturn = "Please turn on the light first";
